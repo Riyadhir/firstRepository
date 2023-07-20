@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Form css</title>
+</head>
+<body>
+	<form name="rgform" onsubmit="return validate()">
+		Email <input type="text" name="Email">
+		Password<input type="text" name="Password">
+		<input type="submit" name="submit">
+
+		<script>
+			function validate()
+			{
+				var mail=document.forms["rgform"]["Email"]
+				var pass=document.forms["rgform"]["Password"]
+				if(mail.value==""){
+					window.alert("please fill mail box");
+				mail.focus();
+				return false;}
+return true;
+
+}
+			
+
+		</script>
+</body>
+</html>
